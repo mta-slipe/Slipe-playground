@@ -22,7 +22,6 @@ namespace SlipePlayground.Server
                 x.ConfigureServices(services =>
                 {
                     services.AddSingleton<ResourceService>();
-                    services.AddSingleton<IResourceProvider, SlipeLuaSupportingFileSystemResourceProvider>();
                     services.AddSingleton<ILogger, ConsoleLogger>();
                 });
             });
