@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlipePlayground", "SlipePlayground\SlipePlayground.csproj", "{164E0AD7-35AB-455B-B08C-328B311A3326}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{79353A2E-E3A3-48EF-BB32-D5973FCEFA4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{4249B192-343A-40CB-8D4E-D3BF7D5ABFC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{33592C92-CA8A-4502-BFD1-2CE0C4FF22E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlipePlayground.Client", "SlipePlayground.Client\SlipePlayground.Client.csproj", "{1305894E-8D84-4081-A65E-57AC69A3FED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlipePlayground.Shared", "SlipePlayground.Shared\SlipePlayground.Shared.csproj", "{98607CB8-4682-4BDD-8C96-D7BB0EF545AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlipePlayground.Server", "SlipePlayground.Server\SlipePlayground.Server.csproj", "{84872595-253A-4229-A4B6-AB7755C2BD72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{164E0AD7-35AB-455B-B08C-328B311A3326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164E0AD7-35AB-455B-B08C-328B311A3326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164E0AD7-35AB-455B-B08C-328B311A3326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164E0AD7-35AB-455B-B08C-328B311A3326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1305894E-8D84-4081-A65E-57AC69A3FED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1305894E-8D84-4081-A65E-57AC69A3FED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1305894E-8D84-4081-A65E-57AC69A3FED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1305894E-8D84-4081-A65E-57AC69A3FED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98607CB8-4682-4BDD-8C96-D7BB0EF545AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98607CB8-4682-4BDD-8C96-D7BB0EF545AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98607CB8-4682-4BDD-8C96-D7BB0EF545AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98607CB8-4682-4BDD-8C96-D7BB0EF545AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84872595-253A-4229-A4B6-AB7755C2BD72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84872595-253A-4229-A4B6-AB7755C2BD72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84872595-253A-4229-A4B6-AB7755C2BD72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84872595-253A-4229-A4B6-AB7755C2BD72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1305894E-8D84-4081-A65E-57AC69A3FED0} = {79353A2E-E3A3-48EF-BB32-D5973FCEFA4D}
+		{98607CB8-4682-4BDD-8C96-D7BB0EF545AE} = {33592C92-CA8A-4502-BFD1-2CE0C4FF22E9}
+		{84872595-253A-4229-A4B6-AB7755C2BD72} = {4249B192-343A-40CB-8D4E-D3BF7D5ABFC3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BC15EC2-0745-4501-A51C-D870C0FDCECD}
+	EndGlobalSection
+EndGlobal

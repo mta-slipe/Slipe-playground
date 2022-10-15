@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SlipeLua.Client" Version="0.1.0-CI-20221014-205241" />
+		<PackageReference Include="SlipeLua.CodeGenerator" Version="0.1.0-CI-20221014-205241" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SlipePlayground.Shared\SlipePlayground.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Lua\**\*">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Lua\*.lua">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="meta.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="entrypoint.slipe">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SlipeLua.Shared" Version="0.1.0-CI-20221014-205241" />
+		<PackageReference Include="SlipeLua.CodeGenerator" Version="0.1.0-CI-20221014-205241" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Lua\**\*">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Lua\*.lua">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SlipeServer.Server" Version="0.1.0-CI-20221013-183332" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SlipePlayground.Shared\SlipePlayground.Shared.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Content Include="..\SlipePlayground.Client\bin\debug\net6.0\Lua\**\*">
+			<Link>Resources\SlipePlayground.Client\Lua\%(RecursiveDir)%(Filename)%(Extension)</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="..\SlipePlayground.Client\bin\debug\net6.0\CoreSystem.Lua\**\*">
+			<Link>Resources\SlipePlayground.Client\CoreSystem.Lua\%(RecursiveDir)%(Filename)%(Extension)</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="..\SlipePlayground.Client\bin\debug\net6.0\entrypoint.slipe">
+			<Link>Resources\SlipePlayground.Client\%(RecursiveDir)%(Filename)%(Extension)</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>
