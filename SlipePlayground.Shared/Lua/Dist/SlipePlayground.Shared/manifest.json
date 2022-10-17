@@ -1,1 +1,1 @@
-{"Modules":["SharedDto"],"Types":["SlipePlayground.Shared.SharedDto"],"RequiredAssemblies":[]}
+{"Modules":["SharedDto","TestRpc"],"Types":["SlipePlayground.Shared.SharedDto","SlipePlayground.Shared.TestRpc"],"RequiredAssemblies":[]}

@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using SlipePlayground.Server.Logic;
+using SlipeServer.LuaControllers;
 using SlipeServer.Server;
 using SlipeServer.Server.Loggers;
 using SlipeServer.Server.Resources;
@@ -18,6 +20,7 @@ namespace SlipePlayground.Server
             {
                 x.AddDefaults(exceptBehaviours: ServerBuilderDefaultBehaviours.MasterServerAnnouncementBehaviour);
                 x.AddLogic<TestLogic>();
+                x.AddLuaControllers();
 
                 x.ConfigureServices(services =>
                 {

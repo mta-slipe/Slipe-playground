@@ -2,6 +2,9 @@
 local System = System
 local SlipeLuaClientIO = SlipeLua.Client.IO
 local SlipeLuaClientPeds = SlipeLua.Client.Peds
+local SlipeLuaClientRpc = SlipeLua.Client.Rpc
+local SlipeLuaSharedRpc = SlipeLua.Shared.Rpc
+local SingleCastRpc_1String = SlipeLuaSharedRpc.SingleCastRpc_1(System.String)
 System.namespace("SlipePlayground.Client", function (namespace)
   namespace.class("Program", function (namespace)
     local Main
@@ -9,6 +12,10 @@ System.namespace("SlipePlayground.Client", function (namespace)
       SlipeLuaClientIO.ChatBox.WriteLine1("Hello world!")
 
       SlipeLuaClientPeds.LocalPlayer.getInstance():setAlpha(150)
+      SlipeLuaClientRpc.RpcManager.getInstance():TriggerRPC("TestRpc", System.new(SingleCastRpc_1String, 2, "Message from client"))
+      SlipeLuaClientRpc.RpcManager.getInstance():RegisterRPC("ServerTestRpc", function (x)
+        SlipeLuaClientIO.ChatBox.WriteLine1(x.Value)
+      end, SingleCastRpc_1String)
     end
     return {
       Main = Main,

@@ -3,10 +3,12 @@ function SlipePlaygroundSharedManifest(path)
   return System.init({
     path = path,
     files = {
-      "SharedDto"
+      "SharedDto",
+      "TestRpc"
     },
     types = {
-      "SlipePlayground.Shared.SharedDto"
+      "SlipePlayground.Shared.SharedDto",
+      "SlipePlayground.Shared.TestRpc"
     },
     assembly = {
       name = "SlipePlayground.Shared",
